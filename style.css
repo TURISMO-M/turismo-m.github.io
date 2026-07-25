@@ -40,6 +40,25 @@ h1, h2, h3, .logo {
     border-bottom: 1px solid rgba(0, 243, 255, 0.2);
 }
 
+/* Logo Styles */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.site-logo {
+    height: 45px; /* Adjust as needed for your image dimensions */
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.site-logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 8px var(--neon-cyan));
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
